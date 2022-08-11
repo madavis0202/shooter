@@ -1,0 +1,22 @@
+mtllib material.mtl
+o Default
+v 1 -8 0
+v 1 14 0
+v 14.5 14 0
+v 14.5 -8 0
+vt 0 0.3125
+vt 0.421875 1
+vt 0 1
+vt 0 0.3125
+vt 0.421875 0.3125
+vt 0.421875 1
+vn 0 0 1
+vn 0 0 1
+vn 0 0 1
+vn 0 0 1
+vn 0 0 1
+vn 0 0 1
+g Object 1642
+usemtl material4
+f 1/1/1 3/2/2 2/3/3
+f 1/4/4 4/5/5 3/6/6

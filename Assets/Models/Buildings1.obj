@@ -1,0 +1,22 @@
+mtllib material.mtl
+o Default
+v -91 1 -16
+v -91 23.5 -16
+v -11 23.5 -16
+v -11 1 -16
+vt 0 0
+vt 1 1
+vt 0 1
+vt 0 0
+vt 1 0
+vt 1 1
+vn 0 0 1
+vn 0 0 1
+vn 0 0 1
+vn 0 0 1
+vn 0 0 1
+vn 0 0 1
+g Buildings1
+usemtl material10
+f 1/1/1 3/2/2 2/3/3
+f 1/4/4 4/5/5 3/6/6
