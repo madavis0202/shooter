@@ -24,6 +24,7 @@ public class BulletScript : MonoBehaviour
 
         Invoke("DeactivateGameObject", deactivate_Timer);
     }
+
     void DeactivateGameObject()
     {
         if (gameObject.activeInHierarchy)
@@ -39,15 +40,17 @@ public class BulletScript : MonoBehaviour
 
         transform.LookAt(transform.position + myBody.velocity);
     }
+    
     public void EnemyLaunch(Transform target)
     {
         transform.LookAt(target.transform.position);
         Debug.Log(target);
     }
+
     void OnTriggerEnter(Collider target)
-        {
+    {
         
-        }
+    }
         
    
 
