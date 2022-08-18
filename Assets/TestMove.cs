@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeyMove : MonoBehaviour
+public class TestMove : MonoBehaviour
 {
     public CharacterController controller;
     public float speed = 12f;
 
-    Vector3 velocity = new Vector3(0f, 0f, 0f);
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -30,6 +29,7 @@ public class KeyMove : MonoBehaviour
             z = 0f;
         }
 
-        controller.Move(new Vector3(x * speed * Time.deltaTime, 0f));
+        Vector3 move = (transform.right * x);
+        controller.Move(move * speed * Time.deltaTime);
     }
 }

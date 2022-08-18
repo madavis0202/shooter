@@ -42,6 +42,7 @@ public class BulletScript : MonoBehaviour
     public void EnemyLaunch(Transform target)
     {
         transform.LookAt(target.transform.position);
+        Debug.Log(target);
     }
     void OnTriggerEnter(Collider target)
         {

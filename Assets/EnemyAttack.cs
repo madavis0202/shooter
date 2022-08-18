@@ -56,7 +56,7 @@ public class EnemyAttack: MonoBehaviour
         body.transform.rotation = Bullet_Start_Position.rotation;
         BulletScript x = bullet.GetComponent<BulletScript>();
         x.EnemyLaunch(target);
-        body.AddForce(Vector3.forward * 15, ForceMode.Impulse);
+        body.AddForce(bullet.transform.forward * 20, ForceMode.Impulse);
     }
     /*    void Shoot()
         {
