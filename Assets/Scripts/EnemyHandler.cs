@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyHandler : MonoBehaviour
 {
     private Animator anim;
+    public string LogCollisionEnter;
+
     public void KnockoutAnimation()
     {
         anim.SetTrigger(AnimationTags.DIE_TRIGGER);
@@ -12,9 +14,9 @@ public class EnemyHandler : MonoBehaviour
 
     void Start()
     {
-     anim = GetComponent<Animator>();
+	anim = GetComponent<Animator>();
     }
-    public string LogCollisionEnter;
+
     private void OnCollisionEnter(Collision collision)
     {
         anim.Play("Knockout");           
