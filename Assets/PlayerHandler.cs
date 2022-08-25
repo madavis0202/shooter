@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHandler : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class PlayerHandler : MonoBehaviour
 	HP -= 1;
 	Debug.Log(HP);
 	if (HP <= 0) {
-	    Debug.Log("You are dead :(");
-	}
+            SceneManager.LoadScene("Test", LoadSceneMode.Single);
+        }
     }
 }
