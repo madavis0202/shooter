@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class DamageTracker : MonoBehaviour
 {
-    public int health;
+    public PlayerHandler player_script;
+    public GameObject player;
     public int numberOfHearts;
 
     public Image[] hearts;
@@ -14,6 +15,8 @@ public class DamageTracker : MonoBehaviour
 
     void Update()
     {
+	player_script = player.GetComponent<PlayerHandler>();
+	int health = player_script.HP;
         for(int i = 0; i < hearts.Length; i++)
         {
             if(i < health)
