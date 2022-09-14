@@ -19,12 +19,17 @@ public class PlayerHandler : MonoBehaviour
         
     }
 
+    void Restart()
+    {
+        SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+    }
     private void OnCollisionEnter(Collision collision)
     {
 	HP -= 1;
 	Debug.Log(HP);
 	if (HP <= 0) {
-            SceneManager.LoadScene("Test", LoadSceneMode.Single);
+            HP = 5;
+            Invoke("Restart", 1f);
         }
     }
 }

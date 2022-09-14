@@ -6,7 +6,7 @@ public class EnemyAttack: MonoBehaviour
 {
     private WeaponHandler weapon_Handler;
 
-    public float fireRate = 1f;
+    public float fireRate = 0.5f;
     private float nextTimeToFire = 0f;
     public float damage = 20f;
 
