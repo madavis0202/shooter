@@ -19,7 +19,8 @@ public class EnemyHandler : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        anim.Play("Knockout");           
+        anim.Play("KO");
+        Debug.Log("He Hit");
     }
 
     // Update is called once per frame

@@ -26,7 +26,6 @@ public class PlayerHandler : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
 	HP -= 1;
-	Debug.Log(HP);
 	if (HP <= 0) {
             HP = 5;
             Invoke("Restart", 1f);
