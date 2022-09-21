@@ -7,8 +7,6 @@ public class SceneLoader: MonoBehaviour
 {
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = true;
     }
     public void QuitGame()
     {

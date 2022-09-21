@@ -28,7 +28,7 @@ public class PlayerHandler : MonoBehaviour
 	HP -= 1;
 	if (HP <= 0) {
             HP = 5;
-            Invoke("Restart", 1f);
+            Invoke("Restart", 0f);
         }
     }
 }
