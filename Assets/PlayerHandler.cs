@@ -6,19 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerHandler : MonoBehaviour
 {
     public int HP = 5;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    private float ShakeTimeRemaining, shakePower;
     void Restart()
     {
         SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
