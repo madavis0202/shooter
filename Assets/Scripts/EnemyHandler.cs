@@ -31,7 +31,7 @@ public class EnemyHandler : MonoBehaviour
         }
         if (gameObject.name == "LasCarasTriplet")
         {
-            //anim.Play("KO3");
+            anim.Play("KO3");
             Debug.Log("FREE");
         }
         
